@@ -23,6 +23,18 @@ const OurCategories = () => {
                         <Commonh3 commonh3={"Favorite Topics To Learn"} className={'text-white'}/>
                     </div>
                     {/* common text part */}
+                    {/* cart part */}
+                    <div className="">
+                        <div className={'border border-primary lg:divide-x divide-y divide-primary rounded-[14px] overflow-hidden flex lg:flex-row flex-col'}>
+                            {forCategory?.map((item)=>(
+                                <div key={item?.id} className="py-14 px-22.5 text-center bg-white hover:bg-gray-100 duration-500 lg:w-1/4">
+                                    <Images imgSrc={item.categoryImg} className={'mx-auto'}/>
+                                    <Commonh4 commonh4={item.cateogoryTitle} className={'text-primaryTwo pt-[27px]'}/>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                    {/* cart part */}
                 </Container>
             </div>
         </section>
