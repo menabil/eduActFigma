@@ -12,7 +12,8 @@ const OurService = () => {
         <div className="pt-[119px] pb-[98px]">
           <div class="bg-[url('/src/assets/serviceBg.png')] py-[120px] bg-cover bg-no-repeat bg-center">
             <Container>
-              <Flex
+              <header>
+                <Flex
                 className={"items-center gap-[15px] justify-center pb-[30px]"}
               >
                 <Commonh4
@@ -76,7 +77,8 @@ const OurService = () => {
                   "font-Urbanist text-primaryTwo leading-[47px] w-[592px] mx-auto text-center"
                 }
               />
-              <Flex className={"gap-3.5 justify-end"}>
+              </header>
+              <Flex className={"gap-3.5 justify-end pb-[43px]"}>
                 <div className="h-10 w-10 bg-white rounded-sm flex justify-center items-center group hover:bg-primary duration-300  ">
                   <FaArrowLeftLong className="text-primary group-hover:text-white" />
                 </div>
