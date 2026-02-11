@@ -1,15 +1,16 @@
-import Discover from "../components/sections/Discover"
-import OurCategories from "../components/sections/OurCategories"
 
-
+import Banner from "../components/sections/Banner";
+import OurCategories from "../components/sections/OurCategories";
+import Discover from "../components/sections/Discover";
 
 const Home = () => {
     return (
         <>
-        <OurCategories/>
-        <Discover/>
+        <Banner />
+        <OurCategories />
+        <Discover />
         </>
-    )
-}
+    );
+};
 
-export default Home;
+export default Home

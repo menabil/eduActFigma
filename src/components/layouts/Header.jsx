@@ -20,7 +20,7 @@ const Header = () => {
           </Link>
           {/* Logo */}
           {/* Menu */}
-          <ul className="flex items-center gap-x-[55px] font-semibold text-[#2A254D] text-base ml-[115px] mr-16">
+          <ul className="flex items-center gap-x-[55px] font-semibold text-primaryTwo text-base ml-[115px] mr-16">
             <li>
               <Link to={""}>Home</Link>
             </li>
@@ -49,7 +49,7 @@ const Header = () => {
           {/* Mobile Device */}
           {/* Menu */}
           {/* Search & User */}
-          <Flex className={"gap-x-3 text-[#2A254D] text-xl"}>
+          <Flex className={"gap-x-3 text-primaryTwo text-xl"}>
             <Link to={""}>
               <FiSearch />
             </Link>
