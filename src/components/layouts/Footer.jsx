@@ -67,7 +67,7 @@ const Footer = () => {
                 </div>
               </div>
               {/* 3rd line */}
-              <div className="second pt-5 lg:pt-0 lg:mx-0 mx-auto">
+              <div className="third pt-5 lg:pt-0 lg:mx-0 mx-auto">
                 <h3 className="text-[24px] font-semibold text-white">Explore</h3>
                 <div className="pt-7.5">
                   <ul className="flex flex-col gap-y-3">
@@ -81,7 +81,7 @@ const Footer = () => {
                 </div>
               </div>
               {/* 4th line */}
-              <div className="second lg:mx-0 mx-auto">
+              <div className="fourth lg:mx-0 mx-auto">
                 <h3 className="text-[24px] font-semibold text-white">Gallery</h3>
                 <div className="pt-7.5">
                   <Flex className={'justify-between gap-x-4'}>
