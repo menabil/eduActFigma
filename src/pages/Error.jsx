@@ -7,6 +7,7 @@ import { LuSearch } from 'react-icons/lu'
 import { FaArrowRightLong } from 'react-icons/fa6'
 import Button from '../components/Button'
 import { Link } from 'react-router-dom'
+import { FaArrowRight } from 'react-icons/fa'
 
 const Error = () => {
     return (
@@ -38,13 +39,8 @@ const Error = () => {
                 </div>
                 {/* button */}
                 <Link to={'/'}>
-                <div className="flex justify-center items-center pb-30">
-                    <div className="relative cursor-pointer">
-                        <Button 
-                            btnText={'Back To Home'} 
-                            className={'py-5 pr-16 pl-6 bg-secondary rounded-md text-white text-[18px] font-bold block'}/>
-                        <FaArrowRightLong className='text-white font-bold absolute right-10 top-1/2 -translate-y-1/2' />
-                    </div>
+                <div className="bg-[#f58c37] text-white text-[18px] font-bold rounded-md w-51 mx-auto">
+                    <Button btnText={<>Back to Home<FaArrowRight /></>}className={"bg-secondarys py-[19px] px-8 rounded-md w-51 clip-ss flex items-center gap-x-2"}/>
                 </div>
                 </Link>
                 {/* button */}

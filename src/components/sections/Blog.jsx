@@ -11,18 +11,18 @@ const Blog = () => {
         {/* Header part */}
         <Flex
           className={
-            "gap-x-2 lg:text-2xl text-lg text-primary font-bold justify-center"
+            "gap-x-2 lg:text-2xl text-lg text-primarys font-bold justify-center"
           }
         >
           Latest Blog
-          <Flex className="lg:text-base text-sm text-secondary">
+          <Flex className="lg:text-base text-sm text-secondarys">
             <FaAngleRight />
             <FaAngleRight />
             <FaAngleRight />
             <FaAngleRight />
           </Flex>
         </Flex>
-        <h3 className="text-[#2A254D] lg:text-[40px] text-3xl font-bold lg:mt-5 mt-3 lg:mb-20 mb-15 text-center">
+        <h3 className="text-primaryTwo lg:text-[40px] text-3xl font-bold lg:mt-5 mt-3 lg:mb-20 mb-15 text-center">
           Latest Updates & Articles
         </h3>
         {/* Header part */}

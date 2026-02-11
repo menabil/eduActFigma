@@ -7,7 +7,7 @@ const Subscribe = () => {
     <div className="lg:mt-50 mt-30">
       <Container
         className={
-          "lg:bg-[url(/src/assets/subscribe.png)] bg-primary lg:py-20 py-15 px-[77px] rounded-2xl lg:rounded-tl-[14px] lg:rounded-tr-[14px] lg:rounded-br-none lg:rounded-bl-none bg-no-repeat bg-center"
+          "bg-[url(/src/assets/subscribe.png)]  lg:py-20 py-15 px-[77px] rounded-tl-[14px] rounded-tr-[14px] rounded-br-none rounded-bl-none bg-no-repeat lg:bg-center bg-bottom-left bg-cover"
         }
       >
         <Flex
@@ -27,7 +27,7 @@ const Subscribe = () => {
             <Button
               btnText={"Subscribe"}
               className={
-                "text-white bg-secondary py-4.5 px-12.5 rounded-md text-lg font-bold"
+                "text-white bg-secondarys py-4.5 px-12.5 rounded-md text-lg font-bold"
               }
             />
           </Flex>
