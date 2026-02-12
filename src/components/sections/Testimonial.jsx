@@ -11,12 +11,12 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 
 const Testimonial = () => {
   return (
-    <div className="font-Urbanist py-30 bg-[url('/src/assets/testimonialBG.png')] bg-no-repeat bg-center bg-cover relative mb-[340px]">
+    <div className="py-30 bg-[url('/src/assets/testimonialBG.png')] bg-no-repeat bg-center bg-cover relative mb-[340px]">
       <Container>
         {/* Heading Part  */}
         <div className="text-center pb-42.5">
           <div className="flex items-center justify-center gap-x-[15px]">
-            <h4 className="text-primary text-2xl font-bold">Testimonial</h4>
+            <h4 className="text-primarys text-2xl font-bold">Testimonial</h4>
             <Images imgSrc={HeadingImg} />
           </div>
           <h3 className="text-primaryTwo text-[40px] font-bold">
@@ -67,10 +67,10 @@ const Testimonial = () => {
 
           {/* Custom Buttons */}
           <div className="flex justify-center gap-x-4 mt-12">
-            <button className="prev-btn w-[50px] h-[50px] bg-primary hover:bg-secondary text-white flex justify-center items-center rounded-sm cursor-pointer transition-all duration-500">
+            <button className="prev-btn w-[50px] h-[50px] bg-primarys hover:bg-secondarys text-white flex justify-center items-center rounded-sm cursor-pointer transition-all duration-500">
               <FaArrowLeft size={20} />
             </button>
-            <button className="next-btn w-[50px] h-[50px] bg-primary hover:bg-secondary text-white flex justify-center items-center rounded-sm cursor-pointer transition-all duration-500">
+            <button className="next-btn w-[50px] h-[50px] bg-primarys hover:bg-secondarys text-white flex justify-center items-center rounded-sm cursor-pointer transition-all duration-500">
               <FaArrowRight size={20} />
             </button>
           </div>

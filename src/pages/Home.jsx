@@ -6,6 +6,8 @@ import Aboutus from "../components/sections/Aboutus";
 import OurService from "../components/sections/OurService";
 import Subscribe from "@/components/sections/Subscribe";
 import Blog from "@/components/sections/Blog";
+import OurTeam from "@/components/sections/OurTeam";
+import Testimonial from "@/components/sections/Testimonial";
 
 const Home = () => {
         return (
@@ -16,6 +18,8 @@ const Home = () => {
         <OurCategories />
         <Discover />
         <Blog/>
+        <OurTeam/>
+        <Testimonial/>
         <Subscribe/>
         </>
         );
