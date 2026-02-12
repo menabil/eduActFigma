@@ -14,8 +14,8 @@ const OurService = () => {
   return (
     <>
       <section className="OurService">
-        <div className="pt-[119px] pb-[98px]">
-          <div class="bg-[url('/src/assets/serviceBg.png')] py-[120px] bg-cover bg-no-repeat bg-center">
+        <div className="mt-[119px] mb-[98px]">
+          <div className="bg-[url('/src/assets/serviceBg.png')] py-[120px] bg-cover bg-no-repeat bg-center">
             <Container>
               <header>
                 <Flex
