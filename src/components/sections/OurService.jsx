@@ -26,14 +26,13 @@ const OurService = () => {
           <div className="bg-[url('/src/assets/serviceBg.png')] py-[120px] bg-cover bg-no-repeat bg-center">
             <Container>
               {/* Service Header Start */}
-
               <header>
                 <Flex
                   className={"items-center gap-[15px] justify-center pb-[30px]"}
                 >
                   <Commonh4
                     commonh4={"Our Service"}
-                    className={"text-primarys leading-[26px]"}
+                    className={"font-Urbanist text-primarys leading-[26px]"}
                   />
                   <div className="flex items-center gap-x-[5px]">
                     <svg
@@ -94,20 +93,23 @@ const OurService = () => {
                 />
               </header>
               {/* Service Header End */}
-
               {/* Arrow Start */}
               <Flex className={"gap-3.5 justify-end pb-[43px]"}>
-                <div className="h-10 w-10 bg-white rounded-sm flex justify-center items-center group hover:bg-primarys transition-all cursor-pointer duration-300  ">
+                <button
+                  onClick={() => swiperRef?.slidePrev()}
+                  className="h-10 w-10 bg-white rounded-sm flex justify-center items-center group hover:bg-primarys transition-all cursor-pointer duration-300  "
+                >
                   <FaArrowLeftLong className="text-primarys group-hover:text-white" />
-                </div>
-                <div className="h-10 w-10 bg-white rounded-sm flex justify-center items-center group hover:bg-primarys transition-all cursor-pointer duration-300">
+                </button>
+                <button
+                  onClick={() => swiperRef?.slideNext()}
+                  className="h-10 w-10 bg-white rounded-sm flex justify-center items-center group hover:bg-primarys transition-all cursor-pointer duration-300"
+                >
                   <FaArrowRightLong className="text-primarys group-hover:text-white" />
-                </div>
+                </button>
               </Flex>
               {/* Arrow End */}
-
               {/* Service Card Start */}
-
               <Flex className={"gap-9"}>
                 <Swiper
                   onSwiper={setSwiperRef}
@@ -125,7 +127,6 @@ const OurService = () => {
                       }
                     />
                   </SwiperSlide>
-
                   <SwiperSlide>
                     <ServiceCard
                       serviceCardImage={serviceBusiness}
@@ -135,7 +136,6 @@ const OurService = () => {
                       }
                     />
                   </SwiperSlide>
-
                   <SwiperSlide>
                     <ServiceCard
                       serviceCardImage={serviceWebinar}
@@ -145,7 +145,6 @@ const OurService = () => {
                       }
                     />
                   </SwiperSlide>
-
                   <SwiperSlide>
                     <ServiceCard
                       serviceCardImage={serviceNeural}
@@ -155,7 +154,6 @@ const OurService = () => {
                       }
                     />
                   </SwiperSlide>
-
                   <SwiperSlide>
                     <ServiceCard
                       serviceCardImage={serviceEducation}
@@ -165,7 +163,6 @@ const OurService = () => {
                       }
                     />
                   </SwiperSlide>
-
                   <SwiperSlide>
                     <ServiceCard
                       serviceCardImage={serviceBusiness}
@@ -175,7 +172,6 @@ const OurService = () => {
                       }
                     />
                   </SwiperSlide>
-
                   <SwiperSlide>
                     <ServiceCard
                       serviceCardImage={serviceWebinar}
@@ -185,7 +181,6 @@ const OurService = () => {
                       }
                     />
                   </SwiperSlide>
-
                   <SwiperSlide>
                     <ServiceCard
                       serviceCardImage={serviceNeural}

@@ -17,6 +17,7 @@ import BlogSidebar from "./pages/BlogSidebar";
 import BlogDetailes from "./pages/BlogDetailes";
 import Faq from "./pages/Faq";
 import About from './pages/About'
+import { ProductDetails } from './pages/ProductDetails'
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
           <Route path="/blogSidebar" element={<BlogSidebar/>} />
           <Route path="/blogDetailes" element={<BlogDetailes/>} />
           <Route path="/faq" element={<Faq/>} />
+          <Route path="/productDetails" element={<ProductDetails/>} />
         </Route>
         <Route path="*" element={<Error />} />
       </Routes>

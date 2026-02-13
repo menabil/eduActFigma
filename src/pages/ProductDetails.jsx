@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Commonh3 from "../components/Commonh3";
 import Flex from "../components/Flex";
 import Container from "../components/Container";
@@ -16,6 +16,19 @@ import { IoIosCheckmarkCircle } from "react-icons/io";
 import reviewImg from "../../src/assets/reviewimg.png";
 
 export const ProductDetails = () => {
+
+const [count, setCount] = useState(1);
+
+  const handleDecrement = () => {
+    if (count > 1) {
+      setCount(count - 1);
+    }
+  };
+
+  const handleIncrement = () => {
+    setCount(count + 1);
+  };
+
   return (
     <section className="productDetails">
       <>
@@ -48,17 +61,17 @@ export const ProductDetails = () => {
                   <h5 className="font-Urbanist font-bold text-[32px] text-primaryTwo leading-[47px]">
                     Boss Sofa
                   </h5>
-                  <p className="font-Urbanist font-bold text-[20px] text-secondary leading-[26px]">
+                  <p className="font-Urbanist font-bold text-[20px] text-secondarys leading-[26px]">
                     $10.33{" "}
                   </p>
                 </div>
                 <div className="flex items-center gap-x-6">
                   <div className="flex gap-x-1">
-                    <FaStar className="text-[20px] text-secondary" />
-                    <FaStar className="text-[20px] text-secondary" />
-                    <FaStar className="text-[20px] text-secondary" />
-                    <FaStar className="text-[20px] text-secondary" />
-                    <FaStar className="text-[20px] text-secondary" />
+                    <FaStar className="text-[20px] text-secondarys" />
+                    <FaStar className="text-[20px] text-secondarys" />
+                    <FaStar className="text-[20px] text-secondarys" />
+                    <FaStar className="text-[20px] text-secondarys" />
+                    <FaStar className="text-[20px] text-secondarys" />
                   </div>
                   <p className="font-Urbanist font-bold text-[20px] text-[#697585] leading-[26px]">
                     2 Customer Review
@@ -74,7 +87,7 @@ export const ProductDetails = () => {
                 <p className="font-Urbanist font-semibold text-[20px] text-[#697585] leading-[26px] pt-5 pb-3.5">
                   REF. 305/639
                 </p>
-                <p className="font-Urbanist font-semibold text-[20px] text-secondary leading-[26px]">
+                <p className="font-Urbanist font-semibold text-[20px] text-secondarys leading-[26px]">
                   In stock
                 </p>
                 <div className="flex gap-[30px] items-center mt-5">
@@ -82,15 +95,15 @@ export const ProductDetails = () => {
                     Quantity
                   </p>
                   <div className="flex items-center border-2 border-[#E4E4E4] rounded-[10px]">
-                    <button className="w-13 h-11 flex items-center justify-center cursor-pointer">
+                    <button onClick={handleDecrement} className="w-13 h-11 flex items-center justify-center cursor-pointer">
                       <span className="text-[23px] text-primaryTwo">–</span>
                     </button>
                     <div className="w-18 h-11 flex items-center justify-center border-x-2 border-[#E4E4E4]">
                       <span className="font-Urbanist font-bold text-[20px] text-primaryTwo">
-                        2
+                        {count}
                       </span>
                     </div>
-                    <button className="w-13 h-11 flex items-center justify-center cursor-pointer">
+                    <button onClick={handleIncrement} className="w-13 h-11 flex items-center justify-center cursor-pointer">
                       <span className="text-[23px] text-primaryTwo">+</span>
                     </button>
                   </div>
@@ -109,7 +122,7 @@ export const ProductDetails = () => {
                     <Button
                       btnText={"Add to Cart"}
                       className={
-                        "py-[19px] pl-8 pr-[52px] bg-secondary rounded-md text-white text-[18px] font-bold relative"
+                        "py-[19px] pl-8 pr-[52px] bg-secondarys rounded-md text-white text-[18px] font-bold relative"
                       }
                     />
                     <FaArrowRightLong className="font-bold text-white absolute top-1/2 right-[14%] -translate-y-1/2" />
@@ -121,16 +134,16 @@ export const ProductDetails = () => {
                   </p>
                   <div className="flex gap-[21px]">
                     <div className="w-10 h-10 bg-[#F6F6F6] rounded-[50%] flex justify-center items-center">
-                      <FaFacebookF className="text-[20px] text-[#2A254D]" />
+                      <FaFacebookF className="text-[20px] text-primaryTwo" />
                     </div>
                     <div className="w-10 h-10 bg-[#F6F6F6] rounded-[50%] flex justify-center items-center">
-                      <FaLinkedinIn className="text-[20px] text-[#2A254D]" />
+                      <FaLinkedinIn className="text-[20px] text-primaryTwo" />
                     </div>
                     <div className="w-10 h-10 bg-[#F6F6F6] rounded-[50%] flex justify-center items-center">
-                      <FaTwitter className="text-[20px] text-[#2A254D]" />
+                      <FaTwitter className="text-[20px] text-primaryTwo" />
                     </div>
                     <div className="w-10 h-10 bg-[#F6F6F6] rounded-[50%] flex justify-center items-center">
-                      <FaYoutube className="text-[20px] text-[#2A254D]" />
+                      <FaYoutube className="text-[20px] text-primaryTwo" />
                     </div>
                   </div>
                 </div>
@@ -161,19 +174,19 @@ export const ProductDetails = () => {
             </p>
             <div className="">
               <div className="flex items-center gap-x-[13px]">
-                <IoIosCheckmarkCircle className="text-[24px] text-secondary" />
+                <IoIosCheckmarkCircle className="text-[24px] text-secondarys" />
                 <p className="font-Urbanist font-bold text-[20px] text-primaryTwo leading-[47px]">
                   Nibh. Nam nec eros id magna hendrerit s
                 </p>
               </div>
               <div className="flex items-center gap-x-[13px]">
-                <IoIosCheckmarkCircle className="text-[24px] text-secondary" />
+                <IoIosCheckmarkCircle className="text-[24px] text-secondarys" />
                 <p className="font-Urbanist font-bold text-[20px] text-primaryTwo leading-[47px]">
                   Vitae nibh. Nam nec eros id magna hendrerit s
                 </p>
               </div>
               <div className="flex items-center gap-x-[13px]">
-                <IoIosCheckmarkCircle className="text-[24px] text-secondary" />
+                <IoIosCheckmarkCircle className="text-[24px] text-secondarys" />
                 <p className="font-Urbanist font-bold text-[20px] text-primaryTwo leading-[47px]">
                   Nam nec eros id magna hendrerit s
                 </p>
@@ -196,11 +209,11 @@ export const ProductDetails = () => {
                       </p>
                     </div>
                     <div className="flex items-center gap-1">
-                      <FaStar className="text-[20px] text-secondary" />
-                      <FaStar className="text-[20px] text-secondary" />
-                      <FaStar className="text-[20px] text-secondary" />
-                      <FaStar className="text-[20px] text-secondary" />
-                      <FaStar className="text-[20px] text-secondary" />
+                      <FaStar className="text-[20px] text-secondarys" />
+                      <FaStar className="text-[20px] text-secondarys" />
+                      <FaStar className="text-[20px] text-secondarys" />
+                      <FaStar className="text-[20px] text-secondarys" />
+                      <FaStar className="text-[20px] text-secondarys" />
                     </div>
                   </div>
                   <p className="font-Urbanist font-bold text-base text-[#697585] leading-8 tracking-[2%] w-[1100px]">
@@ -224,11 +237,11 @@ export const ProductDetails = () => {
                       </p>
                     </div>
                     <div className="flex items-center gap-1">
-                      <FaStar className="text-[20px] text-secondary" />
-                      <FaStar className="text-[20px] text-secondary" />
-                      <FaStar className="text-[20px] text-secondary" />
-                      <FaStar className="text-[20px] text-secondary" />
-                      <FaStar className="text-[20px] text-secondary" />
+                      <FaStar className="text-[20px] text-secondarys" />
+                      <FaStar className="text-[20px] text-secondarys" />
+                      <FaStar className="text-[20px] text-secondarys" />
+                      <FaStar className="text-[20px] text-secondarys" />
+                      <FaStar className="text-[20px] text-secondarys" />
                     </div>
                   </div>
                   <p className="font-Urbanist font-bold text-base text-[#697585] leading-8 tracking-[2%] w-[1100px]">
@@ -244,7 +257,7 @@ export const ProductDetails = () => {
               </div>
             </div>
             <div className="">
-              <p className="font-Urbanist font-bold text-[24px] text-primaryTwo leading-[47px] pb-[48px]">
+              <p className="font-Urbanist font-bold text-[24px] text-primaryTwo leading-[47px] pb-12">
                 Add a Review
               </p>
               <div className="flex items-center gap-4">
@@ -252,11 +265,11 @@ export const ProductDetails = () => {
                   Rate this Product
                 </p>
                 <div className="flex gap-x-1">
-                  <FaStar className="text-[20px] text-secondary" />
-                  <FaStar className="text-[20px] text-secondary" />
-                  <FaStar className="text-[20px] text-secondary" />
-                  <FaStar className="text-[20px] text-secondary" />
-                  <FaStar className="text-[20px] text-secondary" />
+                  <FaStar className="text-[20px] text-secondarys" />
+                  <FaStar className="text-[20px] text-secondarys" />
+                  <FaStar className="text-[20px] text-secondarys" />
+                  <FaStar className="text-[20px] text-secondarys" />
+                  <FaStar className="text-[20px] text-secondarys" />
                 </div>
               </div>
               <div className="mb-[50px]">
@@ -285,7 +298,7 @@ export const ProductDetails = () => {
                 <Button
                   btnText={"Leave a Review"}
                   className={
-                    "py-[19px] pl-8 pr-[52px] bg-secondary rounded-md text-white text-[18px] font-bold relative"
+                    "py-[19px] pl-8 pr-[52px] bg-secondarys rounded-md text-white text-[18px] font-bold relative"
                   }
                 />
                 <FaArrowRightLong className="font-bold text-white absolute top-1/2 left-[13%] -translate-y-1/2" />

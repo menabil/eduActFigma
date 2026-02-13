@@ -8,6 +8,7 @@ import Subscribe from "@/components/sections/Subscribe";
 import Blog from "@/components/sections/Blog";
 import OurTeam from "@/components/sections/OurTeam";
 import Testimonial from "@/components/sections/Testimonial";
+import ServiceCounter from "@/components/sections/ServiceCounter";
 
 const Home = () => {
         return (
@@ -15,6 +16,7 @@ const Home = () => {
         <Banner />
         <Aboutus/>
         <OurService/>
+        <ServiceCounter/>
         <OurCategories />
         <Discover />
         <OurTeam/>
