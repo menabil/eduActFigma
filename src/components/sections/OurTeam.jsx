@@ -10,7 +10,7 @@ import Flex from "../Flex";
 
 const OurTeam = () => {
   return (
-    <div className="font-Urbanist py-16 lg:py-30">
+    <div className="py-16 lg:py-30">
       <Container>
         {/* Heading Part */}
         <div className="text-center px-4">

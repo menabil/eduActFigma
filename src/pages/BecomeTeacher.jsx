@@ -2,8 +2,12 @@
 import Button from '@/components/Button'
 import Container from '@/components/Container'
 import Flex from '@/components/Flex'
+import Images from '@/components/Images'
+import Team from '@/components/Team'
+import { team } from '@/data/forCategory'
 import React from 'react'
-import { FaArrowRight } from 'react-icons/fa'
+import { FaArrowRight, FaFacebookF, FaGithub, FaLinkedinIn } from 'react-icons/fa'
+import HeadingImg from '../../src/assets/HeadingImg.png'
 
 const BecomeTeacher = () => {
     return (
@@ -21,7 +25,7 @@ const BecomeTeacher = () => {
                 {/* common tag for pages */}
                 </Container>
             </div>
-            <div className="py-30">
+            <div className="py-30 border-b border-[#E4E4E4]">
                 <Container>
                     <Flex className={'gap-x-[70px] items-start flex-wrap lg:flex-nowrap'}>
                         <div className="left lg:w-[722px]">
@@ -73,6 +77,46 @@ const BecomeTeacher = () => {
                         </div>
                     </Flex>
                 </Container>
+            </div>
+            <div className="pt-30">
+                <div className="">
+                    <Container>
+                        {/* Heading Part */}
+                        <div className="text-center px-4">
+                        <div className="flex items-center justify-center gap-x-[15px] pb-5 lg:pb-0">
+                            <h4 className="text-primarys text-xl lg:text-2xl font-bold">Our Team</h4>
+                            <Images imgSrc={HeadingImg} />
+                        </div>
+                        <h3 className="w-full lg:w-[510px] mx-auto text-primaryTwo lg:text-[40px] text-[28px] font-bold leading-tight">
+                            Learn from the Best Teacher
+                        </h3>
+                        </div>
+                    </Container>
+                    {/* Team Part */}
+                    <div className="pt-50 pb-5 lg:pb-0 lg:pt-80">
+                        <div className="lg:bg-[url('/src/assets/teamBG.png')] lg:h-[430px] bg-no-repeat bg-center bg-cover relative">
+                            <Container>
+                                <Flex className="flex-wrap lg:flex-nowrap justify-center lg:justify-between gap-y-40 lg:gap-y-0 px-4">
+                                {team.map((item) => (
+                                    <div key={item.id} className="w-full sm:w-[80%] md:w-[45%] lg:w-[32%] flex justify-center">
+                                    <Team
+                                        teamImg={item.teamImg}
+                                        teamName={item.teamName}
+                                        jobTitle={item.jobTitle}
+                                        icon1={<FaFacebookF />}
+                                        link1=""
+                                        icon2={<FaGithub />}
+                                        link2=""
+                                        icon3={<FaLinkedinIn />}
+                                        link3=""
+                                    />
+                                    </div>
+                                ))}
+                                </Flex>
+                            </Container>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         </>

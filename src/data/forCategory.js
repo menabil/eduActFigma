@@ -117,13 +117,52 @@ export const team = [
     {
         id: 2,
         teamImg: Ashfak,
-        teamName: 'Sijan',
+        teamName: 'Ashfak',
         jobTitle: 'Front end developer',
     },
     {
         id: 3,
         teamImg: Ashfak,
-        teamName: 'Nabil',
+        teamName: 'Ashfak',
+        jobTitle: 'Front end developer',
+    }
+]
+
+export const teamforTeacher = [
+    {
+        id: 1,
+        teamImg: Ashfak,
+        teamName: 'Ashfak',
+        jobTitle: 'Front end developer',
+    },
+    {
+        id: 2,
+        teamImg: Ashfak,
+        teamName: 'Ashfak',
+        jobTitle: 'Front end developer',
+    },
+    {
+        id: 3,
+        teamImg: Ashfak,
+        teamName: 'Ashfak',
+        jobTitle: 'Front end developer',
+    },
+    {
+        id: 4,
+        teamImg: Ashfak,
+        teamName: 'Ashfak',
+        jobTitle: 'Front end developer',
+    },
+    {
+        id: 5,
+        teamImg: Ashfak,
+        teamName: 'Ashfak',
+        jobTitle: 'Front end developer',
+    },
+    {
+        id: 6,
+        teamImg: Ashfak,
+        teamName: 'Ashfak',
         jobTitle: 'Front end developer',
     }
 ]
