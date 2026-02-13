@@ -19,7 +19,7 @@ export const ProductDetails = () => {
   return (
     <section className="productDetails">
       <>
-        <div>
+        <div className="mb-[120px]">
           {/* Products Details Header Start */}
           <div className="bg-[#000000] pt-[174px] pb-[154px] text-center">
             <Commonh3
@@ -37,7 +37,6 @@ export const ProductDetails = () => {
             </p>
           </div>
           {/* Products Details Header End */}
-
           <Container>
             {/* Product Details Start */}
             <Flex className={"py-[120px] gap-[66px] items-start"}>
@@ -138,7 +137,6 @@ export const ProductDetails = () => {
               </div>
             </Flex>
             {/* Product Details End */}
-
             {/* Description Start */}
             <Commonh4
               commonh4={"Description"}
@@ -181,6 +179,8 @@ export const ProductDetails = () => {
                 </p>
               </div>
             </div>
+            {/* Description End */}
+            {/* Review Part Start */}
             <div className="w-full border-b border-[#E4E4E4] my-[60px]"></div>
             <p className="font-Urbanist font-bold text-[24px] text-primaryTwo leading-[47px]">
               2 Reviews
@@ -243,7 +243,55 @@ export const ProductDetails = () => {
                 </div>
               </div>
             </div>
-            {/* Description End */}
+            <div className="">
+              <p className="font-Urbanist font-bold text-[24px] text-primaryTwo leading-[47px] pb-[48px]">
+                Add a Review
+              </p>
+              <div className="flex items-center gap-4">
+                <p className="font-Urbanist font-semibold text-[20px] text-[#697585] leading-[26px]">
+                  Rate this Product
+                </p>
+                <div className="flex gap-x-1">
+                  <FaStar className="text-[20px] text-secondary" />
+                  <FaStar className="text-[20px] text-secondary" />
+                  <FaStar className="text-[20px] text-secondary" />
+                  <FaStar className="text-[20px] text-secondary" />
+                  <FaStar className="text-[20px] text-secondary" />
+                </div>
+              </div>
+              <div className="mb-[50px]">
+                <div className="space-x-5">
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    className="py-[25px] pl-[30px] w-[650px] bg-[#F6F6F6] rounded-sm outline-0 font-Urbanist font-bold text-base text-[#697585] leading-[26px]"
+                  />
+                  <input
+                    type="email"
+                    placeholder="Email Address"
+                    className="py-[25px] pl-[30px] w-[650px] bg-[#F6F6F6] rounded-sm outline-0 font-Urbanist font-bold text-base text-[#697585] leading-[26px]"
+                  />
+                </div>
+                <textarea
+                  name=""
+                  id=""
+                  placeholder="Write a Message"
+                  className="mt-5 pl-[30px] pt-6 bg-[#F6F6F6] rounded-sm outline-0 font-Urbanist font-bold text-base text-[#697585] leading-[26px]"
+                  rows={8}
+                  cols={127}
+                ></textarea>
+              </div>
+              <div className="relative text-center lg:text-left cursor-pointer">
+                <Button
+                  btnText={"Leave a Review"}
+                  className={
+                    "py-[19px] pl-8 pr-[52px] bg-secondary rounded-md text-white text-[18px] font-bold relative"
+                  }
+                />
+                <FaArrowRightLong className="font-bold text-white absolute top-1/2 left-[13%] -translate-y-1/2" />
+              </div>
+            </div>
+            {/* Review Part Start */}
           </Container>
         </div>
       </>
