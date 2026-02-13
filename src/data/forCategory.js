@@ -5,7 +5,6 @@ import c4 from '/src/assets/c4.png'
 import p1 from '/src/assets/p1.png'
 import stars from '/src/assets/stars.png'
 import Ashfak from '../../src/assets/ashfak.png'
-import { FaFacebookF, FaGithub, FaLinkedinIn } from 'react-icons/fa'
 
 
 export const forCategory = [
