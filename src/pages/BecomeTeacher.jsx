@@ -7,7 +7,7 @@ import Team from '@/components/Team'
 import { team } from '@/data/forCategory'
 import React from 'react'
 import { FaArrowRight, FaFacebookF, FaGithub, FaLinkedinIn } from 'react-icons/fa'
-import HeadingImg from '../../src/assets/HeadingImg.png'
+import HeadingImg from '/src/assets/headingImg.png'
 
 const BecomeTeacher = () => {
     return (
