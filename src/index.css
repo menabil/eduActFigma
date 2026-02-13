@@ -132,21 +132,20 @@
   * {
     @apply border-border outline-ring/50;
     @apply border-border outline-ring/50;
+    @apply border-border outline-ring/50;
     }
   body {
     @apply bg-background text-foreground;
     @apply bg-background text-foreground;
+    @apply bg-background text-foreground;
     }
 }
-
-
 
 .custom-range-slider .relative {
   height: 6px !important; 
   background-color: #F6F6F6 !important; 
   border-radius: 9999px;
 }
-
 
 .custom-range-slider .absolute {
   background-color: var(--color-secondarys) !important;
