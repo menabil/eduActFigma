@@ -12,6 +12,7 @@ import Cart from './pages/Cart'
 import Product from './pages/Product'
 import BecomeTeacher from './pages/BecomeTeacher'
 import Teacher from './pages/Teacher'
+import Gallery from './pages/Gallery'
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/product" element={<Product/>} />
           <Route path="/becomeTeacher" element={<BecomeTeacher/>} />
           <Route path="/teacher" element={<Teacher/>} />
+          <Route path="/gallery" element={<Gallery/>} />
         </Route>
           <Route path="*" element={<Error/>} />
       </Routes>
