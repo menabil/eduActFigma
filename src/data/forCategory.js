@@ -118,13 +118,13 @@ export const team = [
     {
         id: 2,
         teamImg: Ashfak,
-        teamName: 'Karim',
+        teamName: 'Sijan',
         jobTitle: 'Front end developer',
     },
     {
         id: 3,
         teamImg: Ashfak,
-        teamName: 'Rahim',
+        teamName: 'Nabil',
         jobTitle: 'Front end developer',
     }
 ]
