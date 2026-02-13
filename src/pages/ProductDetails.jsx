@@ -13,7 +13,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import Commonh4 from "../components/Commonh4";
 import { IoIosCheckmarkCircle } from "react-icons/io";
-import reviewImg from "../../src/assets/reviewimg.png"
+import reviewImg from "../../src/assets/reviewimg.png";
 
 export const ProductDetails = () => {
   return (
@@ -164,22 +164,83 @@ export const ProductDetails = () => {
             <div className="">
               <div className="flex items-center gap-x-[13px]">
                 <IoIosCheckmarkCircle className="text-[24px] text-secondary" />
-                <p className="font-Urbanist font-bold text-[20px] text-primaryTwo leading-[47px]">Nibh. Nam nec eros id magna hendrerit s</p>
+                <p className="font-Urbanist font-bold text-[20px] text-primaryTwo leading-[47px]">
+                  Nibh. Nam nec eros id magna hendrerit s
+                </p>
               </div>
               <div className="flex items-center gap-x-[13px]">
                 <IoIosCheckmarkCircle className="text-[24px] text-secondary" />
-                <p className="font-Urbanist font-bold text-[20px] text-primaryTwo leading-[47px]">Vitae nibh. Nam nec eros id magna hendrerit s</p>
+                <p className="font-Urbanist font-bold text-[20px] text-primaryTwo leading-[47px]">
+                  Vitae nibh. Nam nec eros id magna hendrerit s
+                </p>
               </div>
               <div className="flex items-center gap-x-[13px]">
                 <IoIosCheckmarkCircle className="text-[24px] text-secondary" />
-                <p className="font-Urbanist font-bold text-[20px] text-primaryTwo leading-[47px]">Nam nec eros id magna hendrerit s</p>
+                <p className="font-Urbanist font-bold text-[20px] text-primaryTwo leading-[47px]">
+                  Nam nec eros id magna hendrerit s
+                </p>
               </div>
             </div>
             <div className="w-full border-b border-[#E4E4E4] my-[60px]"></div>
-            <p className="font-Urbanist font-bold text-[24px] text-primaryTwo leading-[47px]">2 Reviews</p>
+            <p className="font-Urbanist font-bold text-[24px] text-primaryTwo leading-[47px]">
+              2 Reviews
+            </p>
             <div className="pt-[60px] pb-20">
               <div className="pb-[60px] border-b border-[#E4E4E4] flex items-center gap-[30px]">
-              <Images imgSrc={reviewImg}/>
+                <Images imgSrc={reviewImg} />
+                <div className="">
+                  <div className="flex gap-[900px] mb-5">
+                    <div className="">
+                      <p className="font-Urbanist font-bold text-[24px] text-primaryTwo leading-[26px]">
+                        David Shon
+                      </p>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <FaStar className="text-[20px] text-secondary" />
+                      <FaStar className="text-[20px] text-secondary" />
+                      <FaStar className="text-[20px] text-secondary" />
+                      <FaStar className="text-[20px] text-secondary" />
+                      <FaStar className="text-[20px] text-secondary" />
+                    </div>
+                  </div>
+                  <p className="font-Urbanist font-bold text-base text-[#697585] leading-8 tracking-[2%] w-[1100px]">
+                    Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh.
+                    Nam nec eros id magna hendrerit sagittis. Nullam sed mi non
+                    odio feugiat volutpat sit amet nec elit. Maecenas id
+                    hendrerit ipsum. Sed eget auctor metus, ac dapibus dolor.
+                    Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh.
+                    Nam nec eros id magna hendrerit sagittis. Nullam sed mi non
+                    odio feugiat volutpat sit
+                  </p>
+                </div>
+              </div>
+              <div className="py-[60px] border-b border-[#E4E4E4] flex items-center gap-[30px]">
+                <Images imgSrc={reviewImg} />
+                <div className="">
+                  <div className="flex gap-[900px] mb-5">
+                    <div className="">
+                      <p className="font-Urbanist font-bold text-[24px] text-primaryTwo leading-[26px]">
+                        David Shon
+                      </p>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <FaStar className="text-[20px] text-secondary" />
+                      <FaStar className="text-[20px] text-secondary" />
+                      <FaStar className="text-[20px] text-secondary" />
+                      <FaStar className="text-[20px] text-secondary" />
+                      <FaStar className="text-[20px] text-secondary" />
+                    </div>
+                  </div>
+                  <p className="font-Urbanist font-bold text-base text-[#697585] leading-8 tracking-[2%] w-[1100px]">
+                    Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh.
+                    Nam nec eros id magna hendrerit sagittis. Nullam sed mi non
+                    odio feugiat volutpat sit amet nec elit. Maecenas id
+                    hendrerit ipsum. Sed eget auctor metus, ac dapibus dolor.
+                    Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh.
+                    Nam nec eros id magna hendrerit sagittis. Nullam sed mi non
+                    odio feugiat volutpat sit
+                  </p>
+                </div>
               </div>
             </div>
             {/* Description End */}
