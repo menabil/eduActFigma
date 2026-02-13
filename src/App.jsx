@@ -16,6 +16,7 @@ import Gallery from './pages/Gallery'
 import BlogSidebar from "./pages/BlogSidebar";
 import BlogDetailes from "./pages/BlogDetailes";
 import Faq from "./pages/Faq";
+import About from './pages/About'
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Route path="/becomeTeacher" element={<BecomeTeacher/>} />
           <Route path="/teacher" element={<Teacher/>} />
           <Route path="/gallery" element={<Gallery/>} />
+          <Route path="/gallery" element={<About/>} />
           <Route path="/blogSidebar" element={<BlogSidebar/>} />
           <Route path="/blogDetailes" element={<BlogDetailes/>} />
           <Route path="/faq" element={<Faq/>} />
