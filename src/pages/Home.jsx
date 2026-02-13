@@ -9,6 +9,7 @@ import Blog from "@/components/sections/Blog";
 import OurTeam from "@/components/sections/OurTeam";
 import Testimonial from "@/components/sections/Testimonial";
 import ServiceCounter from "@/components/sections/ServiceCounter";
+import Course from "@/components/sections/Course";
 
 const Home = () => {
         return (
@@ -17,6 +18,7 @@ const Home = () => {
         <Aboutus/>
         <OurService/>
         <ServiceCounter/>
+        <Course/>
         <OurCategories />
         <Discover />
         <OurTeam/>
