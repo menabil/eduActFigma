@@ -175,6 +175,7 @@ export const ProductDetails = () => {
               </div>
             </div>
             <div className="w-full border-b border-[#E4E4E4] my-[60px]"></div>
+            <p className="font-Urbanist font-bold text-[24px] text-primaryTwo leading-[47px]">2 Reviews</p>
             {/* Description End */}
           </Container>
         </div>
