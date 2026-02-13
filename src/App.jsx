@@ -13,6 +13,10 @@ import Product from './pages/Product'
 import BecomeTeacher from './pages/BecomeTeacher'
 import Teacher from './pages/Teacher'
 import Gallery from './pages/Gallery'
+import BlogSidebar from "./pages/BlogSidebar";
+import BlogDetailes from "./pages/BlogDetailes";
+import Faq from "./pages/Faq";
+
 
 function App() {
   return (
@@ -30,6 +34,9 @@ function App() {
           <Route path="/becomeTeacher" element={<BecomeTeacher/>} />
           <Route path="/teacher" element={<Teacher/>} />
           <Route path="/gallery" element={<Gallery/>} />
+          <Route path="/blogSidebar" element={<BlogSidebar/>} />
+          <Route path="/blogDetailes" element={<BlogDetailes/>} />
+          <Route path="/faq" element={<Faq/>} />
         </Route>
         <Route path="*" element={<Error />} />
       </Routes>
