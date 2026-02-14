@@ -6,7 +6,7 @@ import { FaArrowRight } from "react-icons/fa6";
 const Banner = () => {
   return (
     <div className="lg:bg-[url(/src/assets/banner.png)] bg-[url(/src/assets/bannerBgsm.png)]  lg:py-56 py-20 bg-center bg-no-repeat bg-cover">
-      <Container>
+      <Container className={'px-5 lg:px-0'}>
         <h1 className="lg:text-7xl text-[35px] text-primaryTwo font-bold lg:leading-[70px] leading-10 lg:w-[600px] w-65">
           Come along <br /> as we begin our learning journey
         </h1>
