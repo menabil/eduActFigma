@@ -56,7 +56,7 @@ const Contact = () => {
             {/* <div className="bg-[#f58c37] mx-auto text-white text-[18px] font-bold rounded-md w-[227px] mb-7.5">
               <Button btnText={<>Send a Message<FaArrowRight /></>}className={"bg-secondarys py-[19px] px-8 rounded-md w-[227px] clip-ss flex items-center gap-x-2"}/>
             </div> */}
-            <button className="btn">
+            <button className="btn mx-auto mb-7.5">
                 Send a Message
                 <FaArrowRight />
             </button>

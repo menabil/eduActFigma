@@ -4,7 +4,7 @@ import { MdOutlineWatchLater } from "react-icons/md";
 
 const BlogCardLg = () => {
   return (
-    <div className="bg-[#152B4A] lg:h-[450px] h-[400px] lg:w-[868px] rounded-[14px] relative group mb-65 w-[90%]">
+    <div className="bg-[#152B4A] lg:h-[450px] h-[400px] lg:w-[868px] rounded-[14px] relative group mb-65 w-[90%] mx-auto lg:mx-0">
       <div className="absolute lg:w-[788px] w-[300px] bg-white -bottom-65 left-1/2 -translate-x-1/2 shadow-newMade p-7 rounded-tl-[10px] rounded-tr-[10px] rounded-bl-[50px] rounded-br-[50px]">
         <Flex className={"gap-x-5"}>
           <p className="text-sm text-white bg-primarys font-semibold py-2 px-2.5 rounded-[5px]">
@@ -18,7 +18,7 @@ const BlogCardLg = () => {
         <h5 className="pt-6 lg:text-[32px] text-xl text-primaryTwo font-bold">
           The Complete Web Developer Guideline 2023
         </h5>
-        <p className="text-[#697585] font-semibold text-base leading-[25px] py-6 w-[690px]">
+        <p className="text-[#697585] font-semibold text-base leading-[25px] py-6 lg:w-[690px]">
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteradution in some form by injected
           humour, or randomised words which don't look even slightly believable.

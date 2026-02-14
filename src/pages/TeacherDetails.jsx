@@ -41,15 +41,15 @@ const TeacherDetails = () => {
             </div>
             <div className="">
                 <Container>
-                    <Flex className={'gap-x-[75px]'}>
+                    <Flex className={'lg:gap-x-[75px] flex flex-wrap lg:flex-nowrap'}>
                         <div className="left">
                             <Images imgSrc={td}/>
                         </div>
                         <div className="right pt-[165px] pb-[180px]">
                             <h4 className='text-primaryTwo text-[32px] font-bold'>Hello, I’m William Ketty</h4>
                             <p className='text-[20px] text-secondarys'>UI/UX Designer</p>
-                            <p className='text-[#697585] text-base font-semibold leading-8 w-[678px] pt-7.5 pb-12.5'>There are many variations of passages of Lorem Ipsum avagtilable, but the majority have suffered alteration in some form, by injected hudfdfmour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum. Class aptent taciti sociosqu ad litora torquent pe</p>
-                            <p className='text-[#697585] text-base font-semibold leading-8 w-[678px] pb-12.5'>Himenaeos. Vestibulum sollicitudin varius mauris non dignissim. Sed quis iaculis est. Nulla quam neque, interdum vitae fermentum lacinia, interdum eu magna. Mauris non posuere tellus. Donec quis euismod tellus. Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh. Nam nec eros id magna hendrerit sagittis. Nullam sed mi non odio feugiat volutpat sit amet nec elit. Maecenas id hendrerit ipsum. Sed eget auctor metus, ac dapibus dolo</p>
+                            <p className='text-[#697585] text-base font-semibold leading-8 lg:w-[678px] pt-7.5 pb-12.5'>There are many variations of passages of Lorem Ipsum avagtilable, but the majority have suffered alteration in some form, by injected hudfdfmour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum. Class aptent taciti sociosqu ad litora torquent pe</p>
+                            <p className='text-[#697585] text-base font-semibold leading-8 lg:w-[678px] pb-12.5'>Himenaeos. Vestibulum sollicitudin varius mauris non dignissim. Sed quis iaculis est. Nulla quam neque, interdum vitae fermentum lacinia, interdum eu magna. Mauris non posuere tellus. Donec quis euismod tellus. Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh. Nam nec eros id magna hendrerit sagittis. Nullam sed mi non odio feugiat volutpat sit amet nec elit. Maecenas id hendrerit ipsum. Sed eget auctor metus, ac dapibus dolo</p>
                             {/* progress */}
                             <div className="progressBar">
                                 <div className="flex justify-between pb-5.5">
